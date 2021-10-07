@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective:1000px;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 0rem 3rem;
+}
+.sardines {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sardines img {
+    width: 20rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+.circle {
+    width: 17rem;
+    height: 17rem;
+    background: linear-gradient(to right, rgba(73, 72, 72, 0.2), rgba(5, 5, 5, 0.70));
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+.info h1 {
+    font-size: 2.2rem;
+    transition: all 0.75 ease-out;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    padding: 1rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75 ease-out;
+}
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75 ease-out;
+}
+.sizes button {
+    padding:0.5rem 2rem ;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #585858;
+}
+.sizes button:hover {
+    background: rgb(246, 110, 56);
+    color: black;
+}
+button.active {
+    background: #585858;
+    color: white;
+}
+.purches {
+   margin-top: 2rem; 
+   transition: all 0.75 ease-out;
+}
+.purches button{
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #585858;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin-top: 1rem; 
+}
+.purches button:hover {
+    background: rgb(246, 110, 56);
+    color: black;
+}
