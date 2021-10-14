@@ -1,4 +1,4 @@
-//movnebt animation
+//movement animation
 const card = document.querySelector('.card');
 const container = document.querySelector('.container');
 
@@ -33,7 +33,7 @@ purches.style.transform = "translateZ(100px)";
     container.addEventListener('mouseleave', e => {
     card.style.transition = 'all 0.5s ease';
     card.style.transform = `rotateY(0deg) rotateX(0deg)`;
-    //Popback effect
+//Popback effect
     title.style.transform = "translateZ(0px)";
     sardines.style.transform = "translateZ(0px) rotateZ(0deg)";
     description.style.transform = "translateZ(0px)";
@@ -41,7 +41,7 @@ purches.style.transform = "translateZ(100px)";
     purches.style.transform = "translateZ(0px)";
 });
 
-//Ingerdients Calculation 
+//Ingridiantes Calculation 
 
 //function Conversion of Measurement Units
 function type(amount, type){
@@ -57,7 +57,7 @@ function type(amount, type){
     return output
 }
 
-//ingerdiants object
+//ingridiantes object
 let FishAndChips = {
     "Sardines Aux Aromates": type(120, "weight"),
     "Flour": type(300,"weight"),
