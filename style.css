@@ -11,9 +11,11 @@ body {
     align-items: center;
     justify-content: center;
     perspective:1000px;
+    background-color: rgb(240, 239, 239);
 }
 .container {
     width: 60%;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +29,7 @@ body {
     padding: 0rem 3rem;
 }
 .sardines {
-    min-height: 35vh;
+    min-height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +58,9 @@ body {
     color: #585858;
     font-weight: lighter;
     transition: all 0.75 ease-out;
+    margin-bottom: 0.2rem;
 }
+
 .sizes {
     display: flex;
     justify-content: space-between;
@@ -100,4 +104,30 @@ button.active {
 .purches button:hover {
     background: rgb(246, 110, 56);
     color: black;
+}
+.purches i {
+    padding-left: 8px;
+}
+.back {
+    display: none;
+    width: 25%;
+    padding: 0.3rem 0rem;
+    background: #585858;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+.back:hover {
+    background: rgb(246, 110, 56);
+    color: black;
+}
+.back a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.back i {
+    padding-right: 5px;
 }

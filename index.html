@@ -9,6 +9,7 @@
     <meta name="author" content="Naomi Ninnig">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <title>Sardines 3D</title>
+    <script src="https://kit.fontawesome.com/f9455d82f8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
   </head>
 </head>
@@ -20,29 +21,29 @@
                 <img src="./images/IMG_0796-removebg-preview(1).png" alt="sardines fish & chips style"></div>
             <div class="info">
                 <h1 class="title">Fish & Chips</h1>
-                <h3>Delicious and crispy fish & chips sardines style! spicy canned sardines with homemade Chips.</h3>
-                <h3>Amount of people:</h3>
+                <h3>Delicious and crispy fish & chips sardines style! spicy canned sardines with homemade Chips <i class="fas fa-fish"></i></h3>
+
+                <ul><div class="ulEmptyDiv"></div></ul>
+                <h3 class="displayNoneH3">Choose the amount of people:</h3>
                 
-                <div class="sizes">
-                    <button>2 people</button>
-                    <button>4 people</button>
-                    <button class="active">6-8 people</button>
-                    <button>It's a party</button>
+                <div class="sizes" id="ing">
+                    <button id="two" data-anchor="2">2 people</button>
+                    <button id="four"data-anchor="4">4 people</button>
+                    <button id="six" class="active"data-anchor="6">6 people</button>
+                    <button id="ten"data-anchor="10">It's a party</button>
                 </div>
+
                 <div class="purches">
-                    <button onclick="window.location.href = '//www.instagram.com/p/B-y3imvKd4r/'">Get the recipe</button>
-                    <button onclick="window.location.href= '//www.sardinenbarberlin.com/collections/die-extravaganten-sardinen/products/sardinen-aux-aromates-la-belle-iloise-quiberon-frankreich';">Buy the Ingredients</button>
+                    <button onclick="window.location.href = '//www.instagram.com/p/B-y3imvKd4r/'">Get the recipe<i class="fas fa-utensils"></i></button>
+                    <button onclick="window.location.href= '//www.sardinenbarberlin.com/collections/die-extravaganten-sardinen/products/sardinen-aux-aromates-la-belle-iloise-quiberon-frankreich';">Buy the Ingredients<i class="fas fa-shopping-cart"></i></button>
                 </div>
+                <button class="back"><a href="./index.html"><i class="fas fa-arrow-alt-circle-left"></i>Back</a></button>
             </div>
         </div>
     </div>
+   
     
-
-
-
-
-
-
-    <script src="./main.js"></script>
+       
+   <script src="./main.js"></script>
 </body>
 </html>
