@@ -15,7 +15,7 @@ const sizes = document.querySelector('.sizes');
 container.addEventListener('mousemove',(e)=> {
     let xAxis = (window.innerWidth / 2 - e.pageX )/ 10; 
     let yAxis = (window.innerHeight / 2 - e.pageY)/ 10;
-    card.style.transform = `rotateY(${xAxis}deg)rotateX(${yAxis}deg)`
+    card.style.transform = `rotateY(${xAxis}deg)`
 });
 
 //Animate in
@@ -99,6 +99,8 @@ btn.forEach(element => {
 })
 //back to main card button display
 let backBtn = document.querySelector(".back");
+
+
 
 
 
