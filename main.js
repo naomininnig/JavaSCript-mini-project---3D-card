@@ -14,13 +14,13 @@ const sizes = document.querySelector('.sizes');
 //2 divides the window in to 2 
 container.addEventListener('mousemove',(e)=> {
     let xAxis = (window.innerWidth / 2 - e.pageX )/ 10; 
-    let yAxis = (window.innerHeight / 2 - e.pageY)/ 10;
-    card.style.transform = `rotateY(${xAxis}deg)`
+    let yAxis = (window.innerHeight / 2 - e.pageY)/ 50;
+    card.style.transform = `rotateY(${xAxis}deg)rotateX(${yAxis}deg)`
 });
 
 //Animate in
 container.addEventListener('mouseenter',e => {
-    card.style.transition = 'all 0.5s ease';
+    card.style.transition = 'all 1s ease';
 // Popout effect
 title.style.transform = "translateZ(200px)";
 sardines.style.transform = "translateZ(200px) rotateZ(45deg)";
